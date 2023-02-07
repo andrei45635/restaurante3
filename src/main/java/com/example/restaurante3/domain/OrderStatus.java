@@ -1,4 +1,4 @@
-package com.example.restaurante2.domain;
+package com.example.restaurante3.domain;
 
 public enum OrderStatus {
     PLACED,

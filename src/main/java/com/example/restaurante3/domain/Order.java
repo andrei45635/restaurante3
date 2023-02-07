@@ -1,4 +1,4 @@
-package com.example.restaurante2.domain;
+package com.example.restaurante3.domain;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -9,10 +9,9 @@ public class Order extends Entity<Integer>{
     private LocalDateTime date;
     private OrderStatus status;
 
-    public Order(Integer integer, int tableID, List<Integer> menuItems, LocalDateTime date, OrderStatus status) {
+    public Order(Integer integer, int tableID, LocalDateTime date, OrderStatus status) {
         super(integer);
         this.tableID = tableID;
-        this.menuItems = menuItems;
         this.date = date;
         this.status = status;
     }

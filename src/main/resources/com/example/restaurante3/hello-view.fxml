@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.restaurante3.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.restaurante3.controller.HelloController">
+   <children>
+      <Label fx:id="staffLabelID" layoutX="254.0" layoutY="36.0" prefHeight="27.0" prefWidth="94.0" text="Label" />
+      <TableView fx:id="orderItemStaffTableView" layoutY="129.0" prefHeight="273.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tableIDColumn" prefWidth="75.0" text="tableID" />
+          <TableColumn fx:id="dateColumn" prefWidth="224.0" text="date" />
+            <TableColumn fx:id="foodColumn" prefWidth="300.0" text="food" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,2 +1,4 @@
-package com.example.restaurante3.utils.event;public interface Event {
+package com.example.restaurante3.utils.event;
+
+public interface Event {
 }

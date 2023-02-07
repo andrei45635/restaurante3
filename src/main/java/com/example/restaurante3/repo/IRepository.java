@@ -1,6 +1,6 @@
-package com.example.restaurante2.repo;
+package com.example.restaurante3.repo;
 
-import com.example.restaurante2.domain.Entity;
+import com.example.restaurante3.domain.Entity;
 
 import java.util.List;
 
